@@ -2,9 +2,9 @@
 
 const Footer = () => {
     return (
-      <footer>
-        <div className="text-center text-white flex items-center justify-center">
-          <div className=" bg-[#1F2937] p-20 md:pl-96">
+      <footer className="">
+        <div className="text-center text-white flex items-center justify-center ">
+          <div className=" bg-[#1F2937] p-10 md:p-20 w-full">
             <h3>Contact Us</h3>
             <p>
               123 ABS Street, Uni 21, Bangladesh <br />
@@ -12,7 +12,7 @@ const Footer = () => {
               Sat - Sun: 10:00 - 23:00
             </p>
           </div>
-          <div className="bg-[#111827] p-20 md:pr-96">
+          <div className="bg-[#111827] p-10 md:p-20 w-full">
             <h3>Contact Us</h3>
             <p>
               123 ABS Street, Uni 21, Bangladesh <br />

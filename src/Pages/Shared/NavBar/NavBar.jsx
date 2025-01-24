@@ -19,18 +19,18 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="navbar ">
+    <div className="bg-[#15151580]">
+      <div className="navbar fixed z-10 text-white bg-[#15151580] px-5 md:px-20">
         <div className="navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
-              role="button"
+              role="button "
               className="btn btn-ghost lg:hidden"
             ></div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {navLinks}
             </ul>
@@ -43,11 +43,14 @@ const NavBar = () => {
             </span>
           </a>
         </div>
-        <div className=" hidden lg:flex">
-          <ul className="menu menu-horizontal px-1"> {navLinks}</ul>
-        </div>
-        <div className="">
-          <a className="btn">Book a Table</a>
+        <div className="navbar-end ">
+          <ul className="menu menu-horizontal px-1 hidden lg:flex">
+            {" "}
+            {navLinks}
+          </ul>
+          <div className="">
+            <button className="btn md:w-32">Book a Table</button>
+          </div>
         </div>
       </div>
     </div>
